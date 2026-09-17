@@ -35,3 +35,28 @@ if(true){
     console.log(y, x, c);
 }
 console.log(c);
+
+// data two types
+// primitive:
+
+let h = "hello"
+console.log(typeof(h))
+let v = 45;
+console.log(typeof(v))
+
+// Non- Primitve:
+
+// Array
+let fruits = ["Apple", "Mango", "orange"]
+console.log(fruits)
+
+// object:
+
+let student = {
+    name: "yashraj",
+    age: 30
+}
+console.log(student)
+
+
+
