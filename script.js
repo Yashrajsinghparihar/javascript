@@ -102,14 +102,14 @@ console.log(3 + 4 * 4);
 
 // logical operator;
 
-let marks = 50;
-let attendence = 60;
+// let marks = 50;
+// let attendence = 60;
 
-if(marks >= 40 && attendence >= 75){
-    console.log("you can give the exam")
-}else{
-    console.log("you are not allowed")
-}
+// if(marks >= 40 && attendence >= 75){
+//     console.log("you can give the exam")
+// }else{
+//     console.log("you are not allowed")
+// }
 
 // string
 
@@ -122,5 +122,42 @@ console.log(message.slice());
 console.log(message.trim());
 
 
+// if / else / else-if
 
+// if- means when condition true.
+// else- when condition false.
+
+
+// let age = 20;
+
+// if(age <= 18){
+//     console.log("you can able to give vote")
+// }
+// else{
+//     console.log("you are not able to give vote")
+// }
+
+
+// else-if- multiple condition check
+
+let marks = 80;
+
+if(marks >= 95){
+    console.log("grade A++")
+}
+else if(marks >= 75){
+    console.log("grade B")
+}
+else if(marks >= 60){
+    console.log("grade c")
+}
+else if(marks >= 50){
+    console.log("grade D")
+}
+else if(marks >= 40){
+    console.log("grade E")
+}
+else{
+    console.log("fail")
+}
 
