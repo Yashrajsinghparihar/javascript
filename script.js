@@ -161,3 +161,140 @@ else{
     console.log("fail")
 }
 
+
+// loop
+
+// loop - Loop ka use tab hota hai jab humein same kaam baar-baar karwana ho. 
+//        Har baar same code likhne ke bajay, hum loop use karte hain.
+
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+console.log(5);
+
+// with loop
+
+// 1- For loop :-
+
+// for (start; condition; update) {
+//   // code
+// }
+
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+
+
+// let i = 1 → loop 1 se start hoga.
+// i <= 5 → jab tak i 5 se chhota ya equal hai, loop chalega.
+// i++ → har round ke baad i mein 1 add hoga.
+
+// Even numbers print karna
+
+for (let i = 2; i <= 10; i += 2) {
+  console.log(i);
+}
+
+// Reverse counting
+
+for (let i = 10; i >= 1; i--) {
+  console.log(i);
+}
+
+// 2- While loop :-  while loop tab useful hota hai jab humein pehle se nahi pata ki loop kitni baar chalega
+
+let i = 1;
+
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+
+// while mein update, jaise i++, zaroor likhna hai. Warna loop kabhi band nahi hoga
+//  — isse infinite loop bolte hain.
+
+// 3- do...while loop :- do...while mein code kam se kam ek baar zaroor run hota hai, chahe condition false ho.
+
+let i = 1;
+
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+
+// 4. break :- break loop ko turant stop kar deta hai.
+
+for (let i = 1; i <= 10; i++) {
+  if (i === 6) {
+    break;
+  }
+
+  console.log(i);
+}
+
+// Output: Jaise hi i ki value 6 hui, break ne loop ko rok diya.
+1
+2
+3
+4
+5
+
+// 5. continue :- continue current round ko skip karta hai, lekin loop ko band nahi karta.
+
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    continue;
+  }
+
+  console.log(i);
+}
+
+// Output: 3 wala round skip hua, baaki loop chalta raha.
+1
+2
+4
+5
+
+// 7. for...of loop :- for...of array ke values ko one-by-one access karta hai.
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+
+// 8. for...in loop :- for...in object ki keys ko access karta hai.
+
+let student = {
+  name: "Aman",
+  age: 20,
+  city: "Delhi"
+};
+
+for (let key in student) {
+  console.log(key, student[key]);
+}
+
+// 9. Problem-solving pattern: Sum of numbers
+
+let sum = 0;
+
+for (let i = 1; i <= 5; i++) {
+  sum = sum + i;
+}
+
+console.log(sum); // 15
+
+// Step-by-step:
+sum = 0
+sum = 0 + 1 → 1
+sum = 1 + 2 → 3
+sum = 3 + 3 → 6
+sum = 6 + 4 → 10
+sum = 10 + 5 → 15
+
+// One-line recap :-
+// Loops repeated work ko easy banate hain: for fixed repetitions ke liye, while condition-based repetition ke liye, break loop stop karne ke liye, 
+// aur continue ek round skip karne ke liye use hota hai.
+
