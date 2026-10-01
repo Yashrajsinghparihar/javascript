@@ -216,7 +216,7 @@ while (i <= 5) {
 
 // 3- do...while loop :- do...while mein code kam se kam ek baar zaroor run hota hai, chahe condition false ho.
 
-let i = 1;
+// let i = 1;
 
 do {
   console.log(i);
@@ -287,14 +287,47 @@ for (let i = 1; i <= 5; i++) {
 console.log(sum); // 15
 
 // Step-by-step:
-sum = 0
-sum = 0 + 1 → 1
-sum = 1 + 2 → 3
-sum = 3 + 3 → 6
-sum = 6 + 4 → 10
-sum = 10 + 5 → 15
+// sum = 0
+// sum = 0 + 1 → 1
+// sum = 1 + 2 → 3
+// sum = 3 + 3 → 6
+// sum = 6 + 4 → 10
+// sum = 10 + 5 → 15
 
 // One-line recap :-
 // Loops repeated work ko easy banate hain: for fixed repetitions ke liye, while condition-based repetition ke liye, break loop stop karne ke liye, 
 // aur continue ek round skip karne ke liye use hota hai.
 
+
+// Function
+
+// console.log("h")
+// console.log("e")
+// console.log("l")
+// console.log("l")
+// console.log("o")
+
+function sayHi(){
+  console.log("h")
+console.log("e")
+console.log("l")
+console.log("l")
+console.log("o")
+}
+sayHi()
+
+
+function AddTwoNumber(number1 = 10, number2){
+    console.log(number1 + number2);
+}
+AddTwoNumber(number1,20)
+
+// let anurag = function(){
+//   console.log("hello")
+// }
+// anurag()
+
+// let shubham = () => {
+//   console.log("hello")
+// }
+// shubham()
