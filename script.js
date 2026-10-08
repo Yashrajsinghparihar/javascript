@@ -402,12 +402,86 @@
 
 // this
 
-const user = { name: "yashraj" }
+// const user = { name: "yashraj" }
 
-function intro(city, country) {
-  console.log(`${this.name} lives in ${city}, ${country}`);
+// function intro(city, country) {
+//   console.log(`${this.name} lives in ${city}, ${country}`);
+// }
+
+// intro.call(user, "pune", "india");
+// intro.apply(user, ["pune", "india"]);
+// intro.bind(user, "pune", "india")();
+
+
+// // declare
+// let arr
+
+// // intiliase array
+// arr = [1,2,3,4];
+
+// // change an element
+// arr[1] = 100;
+
+// // find lendth
+
+// console.log(arr.length);
+
+
+// let fruits = ["Apple", "mango", "Bnanana"];
+
+// fruits[1] = "Orange"
+
+// // fruits.push("grapes")
+// fruits.unshift("watermelon");
+// fruits.splice(1,1, "grapes")
+
+// let slice = fruits.slice(1,3);
+// console.log(fruits)
+
+// // array destructuring
+// let arr = [1,2,3,4,5]
+
+// let [a,b,c] = arr
+
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+
+// object
+
+// let obj = {
+//     name : "yash",
+//     age : 20
+// }
+
+// Adding value in obj
+// obj.city = "delhi"
+// obj.country = "India"
+
+// // update
+// obj.country = "switerland"
+// obj.age = 21;
+
+// remove
+
+// delete obj.age;
+
+// destructing in obj
+
+// let {name, age} = obj
+// console.log(name,age)
+
+// console.log(obj)
+
+
+
+let arr = [1,2,3,4,5];
+let max = arr[0];
+
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] > max){
+        max = arr[i]
+    }
 }
-
-intro.call(user, "pune", "india");
-intro.apply(user, ["pune", "india"]);
-intro.bind(user, "pune", "india")();
+console.log(max)
