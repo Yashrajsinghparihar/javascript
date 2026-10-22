@@ -768,4 +768,4 @@ for(let i = 0; i < arr.length; i++){
     }
 }
 console.log(max)
->>>>>>> ed8d901fdc7897108e233a5d2f0410866fe87d6f
+// >>>>>>> ed8d901fdc7897108e233a5d2f0410866fe87d6f
